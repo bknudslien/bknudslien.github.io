@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MMM Kings</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../cardsJS/richardschneider-cardsJS-fe5e857/cards.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        pre { font-size: 80%; }
+
+        .button {
+            background-color: #1c87c9;
+            color: #ffffff;
+            vertical-align:middle;
+        }
+    </style>
+
+</head>
+<body onload="loadImages()">
+    <!-- This will shuffle the cards and deal -->
+    <script src="main.js"></script>
+
+    <!-- This will render the screen -->
+    <div class="container-fluid">
+
+        <div class="jumbotron">
+          <div class="container">
+            <h1>MMM Kings Card Game</h1>
+            <p>Rules governed by the Mean Mountain Men consortium.</p>
+          </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <h2 id="player1"></h2>
+                    <img class="card" id="p1c1Image" src="" alt="">
+                    <img class="card" id="p1c2Image" src="" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <h2 id="player2"></h2>
+                    <img class="card" id="p2c1Image" src="" alt="">
+                    <img class="card" id="p2c2Image" src="" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <h2 id="player3"></h2>
+                    <img class="card" id="p3c1Image" src="" alt="">
+                    <img class="card" id="p3c2Image" src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <img class="card" id="p1c3Image" src="" alt="">
+                    <img class="card" id="p1c4Image" src="" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <img class="card" id="p2c3Image" src="" alt="">
+                    <img class="card" id="p2c4Image" src="" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <img class="card" id="p3c3Image" src="" alt="">
+                    <img class="card" id="p3c4Image" src="" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <h2 id="player4"></h2>
+                    <img class="card" id="p4c1Image" src="" alt="">
+                    <img class="card" id="p4c2Image" src="" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <h2 id="player5"></h2>
+                    <img class="card" id="p5c1Image" src="" alt="">
+                    <img class="card" id="p5c2Image" src="" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <h2 id="player6"></h2>
+                    <img class="card" id="p6c1Image" src="" alt="">
+                    <img class="card" id="p6c2Image" src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <img class="card" id="p4c3Image" src="" alt="">
+                    <img class="card" id="p4c4Image" src="" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <img class="card" id="p5c3Image" src="" alt="">
+                    <img class="card" id="p5c4Image" src="" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="hand hhand active-hand">
+                    <img class="card" id="p6c3Image" src="" alt="">
+                    <img class="card" id="p6c4Image" src="" alt="">
+                </div>
+            </div>
+        </div>
+
+        <h2>Some Utilities</h2>
+        <div class="row">
+
+            <div class="hand hhand active-hand">
+                <div class="col-md-6">
+                    <img class='card' id="myImage" src="../cardsJS/richardschneider-cardsJS-fe5e857/cards/BLUE_BACK.svg" alt="Image">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <button class="button" onclick="changeImage()">Flip Card</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <br/>
+                <div>
+                    <!-- <button class="button" onclick="reDeal()">Re-deal</button> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
