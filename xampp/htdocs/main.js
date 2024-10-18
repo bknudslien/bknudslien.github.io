@@ -165,5 +165,5 @@ function loadImages() {
 }
 
 let gameBoard = new Board();
-gameBoard.start('Mike', 'John', 'Doug', 'Jeff', 'Brent', 'Bot1');
+gameBoard.start('Mike', 'John', 'Doug', 'Jeff', 'Brent', 'Colleen (Greatest Wife in the World)');
 console.log(gameBoard.players);
